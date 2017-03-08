@@ -1,0 +1,168 @@
+
+FIRST ATTACKER
+{
+	Determined essentially by coin flip
+}
+
+PLAYER
+{
+	Base HP: 10
+	Base Attack: 5-6
+}
+
+
+
+
+
+	
+EQUIPMENT STATS (Equip equipment set depending on monster, i.e. equip specific equipment set for bonus against specific monster)
+{
+
+	Starting Equipment: Sandals, Cloak, Walking Stick (no bonus)
+
+	Sandals, Swim Trunks, Giant Hatchet
+	{
+		Perfect against [Spider]:
+			Extra attack (5)
+
+	}
+
+	Steel Tipped Boots, Chainmail, Broad Sword
+	{
+		Perfect against [Dwarf]:
+			Extra defense (20)
+			Extra attack (3)
+		Perfect against [Minotaur]:
+			Extra defense (56)
+			Extra attack (10)
+
+	}
+
+	Leather Boot, Leather Armor, Rusty Knife
+	{
+		Acceptable against [Old Lady]:
+			Extra defense (20)
+			Extra attack (10)
+	}
+
+	
+
+
+
+			Level 2: Boots, Plate Armor, Poison Sword
+			{
+				Perfect against [Troll]:
+					Extra defense (170)
+					Extra attack (10)
+
+			}
+
+			Tennis Shoes, Shorts-Tshirt, 9mm
+			{
+				Acceptable against [Assassin]:
+					Extra attack (25)
+				Perfect against [Old Lady]:
+					Extra defense (42)
+					Extra attack (20)
+
+			}
+
+			High Heels, Pink Dress, Bag of Garlic
+			{
+				Perfect against [Vampire]:
+					Extra defense (125)
+					Extra attack (20)
+
+			}
+
+			Bare Foot, Loin Cloth, Spiked Club
+			{
+				(Aid is negligible in these last few battles)
+			}
+
+
+
+					Level 3: Steel Boot, Titanium Armor, AK-47
+					{
+						Perfect against [Assassin]:
+							Extra defense (200)
+							Extra attack (40)
+					}
+
+					Black Padded Boots, Stealth Cloak, Rusty Nail
+					{
+						Poor against [Assassin]:
+							Extra defense (90)
+					}
+
+					Gold Boots, Fire Repellent Shirt, Magic Mace
+					{
+						Best against [Dragon]:
+							Extra defense (330)
+							Altered attack range (50-100)
+					}
+
+}
+
+
+
+
+
+
+
+MONSTERS
+{
+	Thorny Bush
+	{
+		HP: 3
+		Attack: 2-3
+	}
+
+	Giant Spider
+	{
+		HP: 10
+		Attack: 6-8
+	}
+
+	Flatulent Dwarf
+	{
+		HP: 15
+		Attack: 10-14
+	}
+
+	Minotaur
+	{
+		HP: 30
+		Attack: 18-22
+	}
+
+	Angry Old Lady
+	{
+		HP: 25
+		Attack: 25-26
+	}
+
+	Cave Troll
+	{
+		HP: 40
+		Attack: 32-36
+	}
+
+	Vampire
+	{
+		HP: 35
+		Attack: 40-45
+	}
+
+	Bad-Tempered Assassin
+	{
+		HP: 30
+		Attack: 50-70
+	}
+
+	Flaming Dragon
+	{
+		HP: 300
+		Attack: 50-100
+	}
+}
