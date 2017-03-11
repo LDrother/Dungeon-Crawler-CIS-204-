@@ -5,7 +5,7 @@
 class Map
 {
     public:
-        Map();
+        void Map();
 
     protected:
 
