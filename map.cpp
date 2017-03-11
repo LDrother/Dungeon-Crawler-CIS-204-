@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main()
+void Map::Map()
 {
     cout << "*****************************************************************" << endl
          << "* Level |Thorny|______|Giant | ______|Flatulent|_____#Treasure# *" << endl
