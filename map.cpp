@@ -30,5 +30,4 @@ void Map::Map()
          << "*      (Treasure)     (Treasure)                                *" << endl
          << "*      (Room 2A)      (Room 2B)                                 *" << endl
          << "*****************************************************************" << endl;
-    return 0;
 }
