@@ -20,7 +20,7 @@ void inventory::inventory()
  	break;
 
   case 13:
- 	cout << "you are now wearing steel tipped work boots, a nice paper chain-chainmail shirt, and you have a heavy wooden sword" << endl;
+ 	cout << "you are now wearing steel tipped work boots, a nice chainmail shirt, and you are armed with your mother's frying pan" << endl;
  	break;
 
   case 2:
