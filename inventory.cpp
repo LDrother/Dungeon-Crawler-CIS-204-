@@ -40,7 +40,7 @@ void inventory::inventory()
  	break;
  
   case 3:
- 	cout << " you are now wearing steel armoured boots, titanium armour, and running around with your dad hack-saw" << endl;
+ 	cout << " you are now wearing steel armoured boots, titanium armour, and running around with your dad's hack-saw" << endl;
  	break;
  
   case 31:
