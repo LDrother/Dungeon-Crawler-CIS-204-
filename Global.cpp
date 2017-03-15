@@ -1,9 +1,9 @@
 #include <iostream>
-#include <Global.h>
+#include "Global.h"
 
 using namespace std;
 
-class Global
+Global::Global()
 {
 
 }
