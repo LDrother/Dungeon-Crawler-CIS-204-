@@ -3,59 +3,12 @@
 
 class Global
 {
-	
+
 public:
-	struct Player 
-	{
-    	int HP;
-	}
+    int room_num = 0, Player_HP, Bush_HP, Spider_HP, Dwarf_HP, Minotaur_HP, Lady_HP,
+    Troll_HP, Vampire_HP, Assassin_HP, Dragon_HP;
+    Global();
 
-	struct Thorny_Bush
-	{
-		int HP;
-	}
-
-	struct Giant_Spider
-	{
-		int HP;
-	}
-
-	struct Flatulent_Dwarf
-	{
-		int HP;
-	}
-
-	struct Minotaur
-	{
-		int HP;
-	}
-
-	struct Old_Lady
-	{
-		int HP;
-	}
-
-	struct Cave_Troll
-	{
-		int HP;
-	}
-
-	struct Vampire
-	{
-		int HP;
-	}
-
-	struct Assassin
-	{
-		int HP;
-	}
-
-	struct Flaming_Dragon
-	{
-		int HP;
-	}
 };
-
-
 
 #endif
