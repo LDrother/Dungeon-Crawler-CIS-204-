@@ -2,6 +2,8 @@
 
 using namespace std;
 
+int armour;
+
 
  {
         if(choice == 3)
@@ -40,9 +42,10 @@ void inventory::inventory()
  	cout << "flip-flops, a swim-suit, and carrying a giant Pool Noodle... not sure why you'd go with that-- to select this armour press 12+enter" << endl;
  
 
-  case 13:
  	cout << "steel tipped work boots, a nice chainmail shirt, and you are armed with your mother's frying pan--to select this armour press 13+enter" << endl;
- 
+
+cin armour;
+
 armourMenu2:
  {
   
@@ -69,6 +72,7 @@ armourMenu2:
  
   cout << " bare foot, wearing a loin cloth, and brandishing the american flag and an RPG--to select this armour press 23+enter" << endl;
  
+  cin armour;
 
 armourMenu3:
    {
@@ -105,7 +109,7 @@ armourMenu3:
  
   cout << " gold boots, fire repelent shirt, and magic mace... hint: go for the eyes-- to select this option press 32+enter" << endl;
  
-
+cin armour;
 
 {
  switch(armour)
