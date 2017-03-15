@@ -5,8 +5,8 @@ using namespace std;
 
 void Global::Global()
 {
-  int Rm_Num = 0;
-  int Player_HP = 10;
+	int Rm_Num = 0;
+	int Player_HP = 10;
 	int Bush_HP = 3;
 	int SPider_HP = 10;
 	int Dwarf_HP = 15;
