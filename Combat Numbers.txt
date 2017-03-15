@@ -20,14 +20,14 @@ EQUIPMENT STATS (Equip equipment set depending on monster, i.e. equip specific e
 
 	Starting Equipment: Sandals, Cloak, Walking Stick (no bonus)
 
-	Sandals, Swim Trunks, Giant Hatchet
+	Sandals, Swim Trunks, Giant Pool Noodle
 	{
 		Perfect against [Spider]:
 			Extra attack (5)
 
 	}
 
-	Steel Tipped Boots, Chainmail, Broad Sword
+	Steel Tipped Boots, Chainmail, Frying Pan
 	{
 		Perfect against [Dwarf]:
 			Extra defense (20)
@@ -49,7 +49,7 @@ EQUIPMENT STATS (Equip equipment set depending on monster, i.e. equip specific e
 
 
 
-			Level 2: Boots, Plate Armor, Poison Sword
+			Level 2: Boots, Celtic Skirt, Poison Sword
 			{
 				Perfect against [Troll]:
 					Extra defense (170)
@@ -57,7 +57,7 @@ EQUIPMENT STATS (Equip equipment set depending on monster, i.e. equip specific e
 
 			}
 
-			Tennis Shoes, Shorts-Tshirt, 9mm
+			Tennis Shoes, Shorts-Tshirt, 50cal Handgun
 			{
 				Acceptable against [Assassin]:
 					Extra attack (25)
@@ -75,21 +75,21 @@ EQUIPMENT STATS (Equip equipment set depending on monster, i.e. equip specific e
 
 			}
 
-			Bare Foot, Loin Cloth, Spiked Club
+			Bare Foot, Loin Cloth, American Flag and RPG
 			{
 				(Aid is negligible in these last few battles)
 			}
 
 
 
-					Level 3: Steel Boot, Titanium Armor, AK-47
+					Level 3: Steel Boot, Titanium Armor, Hacksaw
 					{
 						Perfect against [Assassin]:
 							Extra defense (200)
 							Extra attack (40)
 					}
 
-					Black Padded Boots, Stealth Cloak, Rusty Nail
+					Blonde Highschool girl, Pumpkin-spiced Latte, Bad Attitude
 					{
 						Poor against [Assassin]:
 							Extra defense (90)
