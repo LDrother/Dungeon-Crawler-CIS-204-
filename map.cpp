@@ -28,6 +28,6 @@ void Map::Map()
          << "*          |              |                                     *" << endl
          << "*          v              v                                     *" << endl
          << "*      (Treasure)     (Treasure)                                *" << endl
-         << "*      (Room 2A)      (Room 2B)                                 *" << endl
+         << "*      (Room 3A)      (Room 3B)                                 *" << endl
          << "*****************************************************************" << endl;
 }
