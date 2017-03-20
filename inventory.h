@@ -2,7 +2,7 @@
 #define INVENTORY_H
 
 
-class Map
+class inventory
 {
     public:
         void inventory();
