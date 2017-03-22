@@ -6,6 +6,10 @@ using namespace std;
 void Global::Global()
 {
 	int Rm_Num = 0;
+	int Equipment = 10;
+	int FirstAttacker = 0;
+	int MonsterAttack = 0;
+	int PlayerAttack = 0;
 	int Player_HP = 10;
 	int Bush_HP = 3;
 	int SPider_HP = 10;
