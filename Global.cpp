@@ -21,3 +21,11 @@ void Global::Global()
 	int Assassin_HP = 30;
 	int Dragon_HP = 300;
 }
+
+Global::menu()
+{
+    cout << "\nPress 1 to continue to the next room." << endl;
+    cout << "Press 2 to view map." << endl;
+    cout << "Press 3 to view your inventory" << endl;
+    cout << "Press 0 to exit." << endl;
+}
