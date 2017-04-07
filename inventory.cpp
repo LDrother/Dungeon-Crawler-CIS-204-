@@ -1,132 +1,135 @@
 #include <iostream>
+#include "inventory.h"
+#include "Global.h"
 
 using namespace std;
 
-int armour;
+Global oj;
 
-
- {
-        if(choice == 3)
-        {
-         cout << "you have selected to change your armour" << endl;
-       
-         cout armourMenu1;
-        }
-        if (1C == Complete)
-        {
-         cout armourMenu2;
-        }
-        if (2C == Complete)
-        {
-         cout armourMenu3;
-        }
-        
-    }
-
-
-void inventory::inventory()
- 
- int Main()
- 
+inventory::inventory()
 {
- armourMenu1:
-  
-  cout << " you are wearing simple sandals, a plain cloak, and carrying a walking stick" << endl;
- 
- 
- 	cout << "comfy leather boots, some worn leather armour, and you've found a rusty knife-- To select this armour press 11+enter" << endl;
- 
-  
- 	cout << "flip-flops, a swim-suit, and carrying a giant Pool Noodle... not sure why you'd go with that-- to select this armour press 12+enter" << endl;
- 
-
- 	cout << "steel tipped work boots, a nice chainmail shirt, and you are armed with your mother's frying pan--to select this armour press 13+enter" << endl;
-
-cin armour;
-} 
-
-armourMenu2:
+switch(oj.Rm_Num)
 {
- 	cout << "combat boots, celtic warriors skirt, and a sword with a poisonous blade--to select this armour press 2+enter" << endl;
- 	
+case 0:
 
- 	cout << "tennis shoes, shorts and a Tshirt, and a packing 50cal handgun--to select this armour press 21+enter" << endl;
- 	
-  
- 	cout << "high heels, a pink sundress, and are now carrying a handbag with garlic in it--to select this armour press 22+enter" endl;
-   
- 
-  cout << " bare foot, wearing a loin cloth, and brandishing the american flag and an RPG--to select this armour press 23+enter" << endl;
- 
-  cin armour;
+  cout << "You have selected to change your armour." << endl;
+  cout << "You are wearing simple sandals, a plain cloak, and carrying a walking stick.\n" << endl;
 
-armourMenu3:
- }
-  
-   
-  {
-    
- 	cout << "steel armoured boots, titanium armour, and your dad's hack-saw--to select this armour press 3+enter" << endl;
- 
- 
-  cout << " become a beautiful long blonde highschool girl, carrying a pumkin spiced latte, and a bad attitude--to selec this.. 'option' press 31+enter" << endl;
- 
- 
-  cout << " gold boots, fire repelent shirt, and magic mace... hint: go for the eyes-- to select this option press 32+enter" << endl;
- 
-cin armour;
-   }
-    
+
+  cout << "Enter armour set number to equip:\n" << endl;
+
+  cout << "11. Comfy leather boots, some worn leather armour, and you've found a rusty knife." << endl;
+  cout << "12. Flip-flops, a swim-suit, and carrying a giant Pool Noodle... not sure why you'd go with that." << endl;
+  cout << "13. Steel tipped work boots, a nice chain mail shirt, and you are armed with your mother's frying pan." << endl;
+
+    break;
+
+case 1:
+
+  cout << "You have selected to change your armour.\n" << endl;
+
+  cout << "Enter armour set number to equip:\n" << endl;
+
+  cout << "11. Comfy leather boots, some worn leather armour, and you've found a rusty knife." << endl;
+  cout << "12. Flip-flops, a swim-suit, and carrying a giant Pool Noodle... not sure why you'd go with that." << endl;
+  cout << "13. Steel tipped work boots, a nice chain mail shirt, and you are armed with your mother's frying pan." << endl;
+  cout << "2.  Combat boots, Celtic warriors skirt, and a sword with a poisonous blade." << endl;
+  cout << "21. Tennis shoes, shorts and a t-shirt, and a packing 50cal handgun." << endl;
+  cout << "22. High heels, a pink sun dress, and are now carrying a handbag with garlic in it." << endl;
+  cout << "23. Bare foot, wearing a loin cloth, and brandishing the American flag and an RPG." << endl;
+
+break;
+
+case 2:
+
+  cout << "You have selected to change your armour.\n" << endl;
+
+  cout << "Enter armour set number to equip:\n" << endl;
+
+  cout << "11. Comfy leather boots, some worn leather armour, and you've found a rusty knife." << endl;
+  cout << "12. Flip-flops, a swim-suit, and carrying a giant Pool Noodle... not sure why you'd go with that." << endl;
+  cout << "13. Steel tipped work boots, a nice chain mail shirt, and you are armed with your mother's frying pan." << endl;
+  cout << "2.  Combat boots, Celtic warriors skirt, and a sword with a poisonous blade." << endl;
+  cout << "21. Tennis shoes, shorts and a t-shirt, and a packing 50cal handgun." << endl;
+  cout << "22. High heels, a pink sun dress, and are now carrying a handbag with garlic in it." << endl;
+  cout << "23. Bare foot, wearing a loin cloth, and brandishing the American flag and an RPG." << endl;
+  cout << "3.  Steel armoured boots, titanium armour, and your dad's hack-saw." << endl;
+  cout << "31. Become a beautiful blond high school girl, carrying a pumpkin spiced latte, and a bad attitude." << endl;
+  cout << "32. Gold boots, fire repellent shirt, and magic mace... hint: go for the eyes." << endl;
+
+break;
+}
+
+   if(oj.choice == 3)
+{
+        if (oj.Rm_Num == 0)
+        {
+        switch(oj.Rm_Num == 0);
+        }
+        if (oj.Rm_Num == 1)
+        {
+        switch (oj.Rm_Num == 1);
+        }
+        switch (oj.Rm_Num == 2)
+        {
+         switch (oj.Rm_Num == 2);
+        }
+}
+
+        cin >> armour;
 {
  switch(armour)
  {
   case 10:
-  cout << "you are wearing simple sandals, a plain cloak, and carrying a walking stick" << endl;
+  cout << "You are wearing simple sandals, a plain cloak, and carrying a walking stick." << endl;
   break;
- 
+
   case 11:
- 	cout << "you are now equipped with some comfy leather boots, some worn leather armour, and you've found a rusty knife" << endl;
+ 	cout << "You are now equipped with some comfy leather boots, some worn leather armour, and you've found a rusty knife." << endl;
  	break;
- 
+
   case 12:
- 	cout << "you are now wearing flip-flops, a swim-suit, and carrying a giant Pool Noodle... not sure why you'd go with that..." << endl;
+ 	cout << "You are now wearing flip-flops, a swim-suit, and carrying a giant Pool Noodle... not sure why you'd go with that..." << endl;
  	break;
 
   case 13:
- 	cout << "you are now wearing steel tipped work boots, a nice chainmail shirt, and you are armed with your mother's frying pan" << endl;
+ 	cout << "You are now wearing steel tipped work boots, a nice chain mail shirt, and you are armed with your mother's frying pan." << endl;
  	break;
 
   case 2:
- 	cout << " to start out level two, you have combat boots, celtic warriors skirt, and a sword with a poisonous blade" << endl;
+ 	cout << " to start out level two, you have combat boots, Celtic warriors skirt, and a sword with a poisonous blade" << endl;
  	break;
- 
+
   case 21:
- 	cout << " you are now wearing some tennis shoes, shorts and a Tshirt, and a packing 50cal handgun" << endl;
+ 	cout << "You are now wearing some tennis shoes, shorts and a t-shirt, and a packing 50cal handgun." << endl;
  	break;
 
   case 22:
- 	cout << " you have decided to put on high heels, a pink sundress, and are now carrying a handbag with garlic in it" endl;
+ 	cout << "You have decided to put on high heels, a pink sun dress, and are now carrying a handbag with garlic in it." << endl;
  	break;
 
   case 23:
- 	cout << " you are now bare foot, wearing a loin cloth, and brandishing the american flag and an RPG" << endl;
+ 	cout << "You are now bare foot, wearing a loin cloth, and brandishing the American flag and an RPG." << endl;
  	break;
- 
+
   case 3:
- 	cout << " you are now wearing steel armoured boots, titanium armour, and running around with your dad's hack-saw" << endl;
+ 	cout << "You are now wearing steel armoured boots, titanium armour, and running around with your dad's hack-saw." << endl;
  	break;
- 
+
   case 31:
- 	cout << " you are now a beautiful blonde highschool girl, carrying a pumkin spiced latte, and a bad attitude" << endl;
+ 	cout << "You are now a beautiful blond high school girl, carrying a pumpkin spiced latte, and a bad attitude." << endl;
  	break;
- 
+
   case 32:
- 	cout << " dang! you now have gold boots, fire repelent shirt, and are carrying magic mace... hint: go for the eyes" << endl;
+ 	cout << "Dang! You now have gold boots, a fire repellent shirt, and are carrying magic mace... hint: go for the eyes." << endl;
  	break;
 
   default:
- 	cout << " you're not going into battle naked and un-armed! PUT SOME CLOTHES ON AND GRAB SOMETHING TO HIT BAD GUYS WITH!" << endl;
+ 	cout << "You're not going into battle naked and unarmed! PUT SOME CLOTHES ON AND GRAB SOMETHING TO HIT BAD GUYS WITH!" << endl;
+ 	cin >> armour;
 
 
  }
 }
+}
+
