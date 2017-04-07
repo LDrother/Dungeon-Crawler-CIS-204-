@@ -5,8 +5,10 @@
 class inventory
 {
     public:
-        void inventory();
-        int armour;
+
+        int armour = 0;
+        inventory();
+
 
     protected:
 
