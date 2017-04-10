@@ -732,25 +732,116 @@ Combat::Combat()
     	}
     }
 
-
-
-
-
-
-
-
-
-
-    if(ob.Rm_Num = 7)
+    //ROOM 7 INFORMATION
+    if(Rm_Num = 7)
     {
     	//coin flip to determine first attacker
     	srand(time(0));
     	FirstAttacker = 1+(rand()%2);
 
     	//combat taking into account the room, monster, player's equipped equipment
-    	if(in.armour == 12)
+    	if(Equipment == 22)
     	{
+    		//Player HP increased
+    		Player_HP = 135
 
+    		if(FirstAttacker == 1)
+    		{
+    			while(Vampire_HP>0 && Player_HP>0)
+    			{
+    				srand(time(0));
+    				MonsterAttack = 40+(rand()%45);
+    				Player_HP = Player_HP - MonsterAttack;
+    				cout << "Master Vampire hits for " << MonsterAttack << "!" << endl;
+
+    				//check if player is killed
+    				if(Player_HP <= 0)
+    				{
+    					break;
+    				}
+
+
+    				srand(time(0));
+    				PlayerAttack = 45+(rand()%46);
+    				Vampire_HP = Vampire_HP - PlayerAttack;
+    				cout << "You hit for " << PlayerAttack << "!" << endl;
+    			}
+    		}
+    		else
+    		{
+    			while(Vampire_HP>0 && Player_HP>0)
+    			{
+    				srand(time(0));
+    				PlayerAttack = 45+(rand()%46);
+    				Vampire_HP = Vampire_HP - PlayerAttack;
+    				cout << "You hit for " << PlayerAttack << "!" << endl;
+
+    				//check if monster is killed
+    				if(Vampire_HP <= 0)
+    				{
+    					break;
+    				}
+
+    				srand(time(0));
+    				MonsterAttack = 40+(rand()%45);
+    				Player_HP = Player_HP - MonsterAttack;
+    				cout << "Master Vampire hits for " << MonsterAttack << "!" << endl;
+    			}
+    		}
+    	}
+    	else
+    	{
+    		if(FirstAttacker == 1)
+    		{
+    			while(Vampire_HP>0 && Player_HP>0)
+    			{
+    				srand(time(0));
+    				MonsterAttack = 40+(rand()%45);
+    				Player_HP = Player_HP - MonsterAttack;
+    				cout << "Master Vampire hits for " << MonsterAttack << "!" << endl;
+
+    				//check if player is killed
+    				if(Player_HP <= 0)
+    				{
+    					break;
+    				}
+
+
+    				srand(time(0));
+    				PlayerAttack = 5+(rand()%6);
+    				Vampire_HP = Vampire_HP - PlayerAttack;
+    				cout << "You hit for " << PlayerAttack << "!" << endl;
+    			}
+    		}
+    		else
+    		{
+    			while(Vampire_HP>0 && Player_HP>0)
+    			{
+    				srand(time(0));
+    				PlayerAttack = 5+(rand()%6);
+    				Vampire_HP = Vampire_HP - PlayerAttack;
+    				cout << "You hit for " << PlayerAttack << "!" << endl;
+
+    				//check if monster is killed
+    				if(Vampire_HP <= 0)
+    				{
+    					break;
+    				}
+
+    				srand(time(0));
+    				MonsterAttack = 40+(rand()%45);
+    				Player_HP = Player_HP - MonsterAttack;
+    				cout << "Master Vampire hits for " << MonsterAttack << "!" << endl;
+    			}
+    		}
+    	}
+    	if(Player_HP <= 0)
+    	{
+    		cout << "His royal thirstiness has turned you into a raisin!" << endl;
+    	}
+    	else
+    	{
+    		cout << "and... that vampire ran off at the sight of your garlic. What a strange way to defeat an enemy." << endl;
     	}
     }
 
@@ -762,17 +853,211 @@ Combat::Combat()
 
 
 
-
-    if(ob.Rm_Num = 8)
+    //ROOM 8 INFORMATION
+    if(Rm_Num = 8)
     {
     	//coin flip to determine first attacker
     	srand(time(0));
     	FirstAttacker = 1+(rand()%2);
 
     	//combat taking into account the room, monster, player's equipped equipment
-    	if(in.armour == 12)
+    	if(Equipment == 30)
     	{
+    		//Player HP increased
+    		Player_HP = 210
 
+    		if(FirstAttacker == 1)
+    		{
+    			while(Assassin_HP>0 && Player_HP>0)
+    			{
+    				srand(time(0));
+    				MonsterAttack = 50+(rand()%70);
+    				Player_HP = Player_HP - MonsterAttack;
+    				cout << "Enraged Assassin hits for " << MonsterAttack << "!" << endl;
+
+    				//check if player is killed
+    				if(Player_HP <= 0)
+    				{
+    					break;
+    				}
+
+
+    				srand(time(0));
+    				PlayerAttack = 45+(rand()%46);
+    				Assassin_HP = Assassin_HP - PlayerAttack;
+    				cout << "You hit for " << PlayerAttack << "!" << endl;
+    			}
+    		}
+    		else
+    		{
+    			while(Assassin_HP>0 && Player_HP>0)
+    			{
+    				srand(time(0));
+    				PlayerAttack = 45+(rand()%46);
+    				Assassin_HP = Assassin_HP - PlayerAttack;
+    				cout << "You hit for " << PlayerAttack << "!" << endl;
+
+    				//check if monster is killed
+    				if(Assassin_HP <= 0)
+    				{
+    					break;
+    				}
+
+    				srand(time(0));
+    				MonsterAttack = 50+(rand()%70);
+    				Player_HP = Player_HP - MonsterAttack;
+    				cout << "Enraged Assassin hits for " << MonsterAttack << "!" << endl;
+    			}
+    		}
+    	}
+    	if(Equipment == 21)
+    	{
+    		if(FirstAttacker == 1)
+    		{
+    			while(Assassin_HP>0 && Player_HP>0)
+    			{
+    				srand(time(0));
+    				MonsterAttack = 50+(rand()%70);
+    				Player_HP = Player_HP - MonsterAttack;
+    				cout << "Enraged Assassin hits for " << MonsterAttack << "!" << endl;
+
+    				//check if player is killed
+    				if(Player_HP <= 0)
+    				{
+    					break;
+    				}
+
+
+    				srand(time(0));
+    				PlayerAttack = 30+(rand()%31);
+    				Assassin_HP = Assassin_HP - PlayerAttack;
+    				cout << "You hit for " << PlayerAttack << "!" << endl;
+    			}
+    		}
+    		else
+    		{
+    			while(Assassin_HP>0 && Player_HP>0)
+    			{
+    				srand(time(0));
+    				PlayerAttack = 30+(rand()%31);
+    				Assassin_HP = Assassin_HP - PlayerAttack;
+    				cout << "You hit for " << PlayerAttack << "!" << endl;
+
+    				//check if monster is killed
+    				if(Assassin_HP <= 0)
+    				{
+    					break;
+    				}
+
+    				srand(time(0));
+    				MonsterAttack = 50+(rand()%70);
+    				Player_HP = Player_HP - MonsterAttack;
+    				cout << "Enraged Assassin hits for " << MonsterAttack << "!" << endl;
+    			}
+    		}
+    	}
+    	if(Equipment == 31)
+    	{
+    		//Player HP increased
+    		Player_HP = 100
+
+    		if(FirstAttacker == 1)
+    		{
+    			while(Assassin_HP>0 && Player_HP>0)
+    			{
+    				srand(time(0));
+    				MonsterAttack = 50+(rand()%70);
+    				Player_HP = Player_HP - MonsterAttack;
+    				cout << "Enraged Assassin hits for " << MonsterAttack << "!" << endl;
+
+    				//check if player is killed
+    				if(Player_HP <= 0)
+    				{
+    					break;
+    				}
+
+
+    				srand(time(0));
+    				PlayerAttack = 5+(rand()%6);
+    				Assassin_HP = Assassin_HP - PlayerAttack;
+    				cout << "You hit for " << PlayerAttack << "!" << endl;
+    			}
+    		}
+    		else
+    		{
+    			while(Assassin_HP>0 && Player_HP>0)
+    			{
+    				srand(time(0));
+    				PlayerAttack = 5+(rand()%6);
+    				Assassin_HP = Assassin_HP - PlayerAttack;
+    				cout << "You hit for " << PlayerAttack << "!" << endl;
+
+    				//check if monster is killed
+    				if(Assassin_HP <= 0)
+    				{
+    					break;
+    				}
+
+    				srand(time(0));
+    				MonsterAttack = 50+(rand()%70);
+    				Player_HP = Player_HP - MonsterAttack;
+    				cout << "Enraged Assassin hits for " << MonsterAttack << "!" << endl;
+    			}
+    		}
+    	}
+    	else
+    	{
+    		if(FirstAttacker == 1)
+    		{
+    			while(Assassin_HP>0 && Player_HP>0)
+    			{
+    				srand(time(0));
+    				MonsterAttack = 50+(rand()%70);
+    				Player_HP = Player_HP - MonsterAttack;
+    				cout << "Enraged Assassin hits for " << MonsterAttack << "!" << endl;
+
+    				//check if player is killed
+    				if(Player_HP <= 0)
+    				{
+    					break;
+    				}
+
+
+    				srand(time(0));
+    				PlayerAttack = 5+(rand()%6);
+    				Assassin_HP = Assassin_HP - PlayerAttack;
+    				cout << "You hit for " << PlayerAttack << "!" << endl;
+    			}
+    		}
+    		else
+    		{
+    			while(Assassin_HP>0 && Player_HP>0)
+    			{
+    				srand(time(0));
+    				PlayerAttack = 5+(rand()%6);
+    				Assassin_HP = Assassin_HP - PlayerAttack;
+    				cout << "You hit for " << PlayerAttack << "!" << endl;
+
+    				//check if monster is killed
+    				if(Assassin_HP <= 0)
+    				{
+    					break;
+    				}
+
+    				srand(time(0));
+    				MonsterAttack = 50+(rand()%70);
+    				Player_HP = Player_HP - MonsterAttack;
+    				cout << "Enraged Assassin hits for " << MonsterAttack << "!" << endl;
+    			}
+    		}
+    	}
+    	if(Player_HP <= 0)
+    	{
+    		cout << "You never saw him coming... that assassin got you good!" << endl;
+    	}
+    	else
+    	{
+    		cout << "Lucky you, the final battle awaits..." << endl;
     	}
     }
 
@@ -784,18 +1069,72 @@ Combat::Combat()
 
 
 
-
-    if(ob.Rm_Num = 9)
+    //ROOM 9 INFORMATION
+    if(Rm_Num = 9)
     {
     	//coin flip to determine first attacker
     	srand(time(0));
     	FirstAttacker = 1+(rand()%2);
-
+    
 
    	    //combat taking into account the room, monster, player's equipped equipment
-    	if(in.armour == 12)
+    	if(Equipment == 32)
     	{
+    		//Player HP increased
+    		Player_HP = 340
 
+    		if(FirstAttacker == 1)
+    		{
+    			while(Dragon_HP>0 && Player_HP>0)
+    			{
+    				srand(time(0));
+    				MonsterAttack = 50+(rand()%100);
+    				Player_HP = Player_HP - MonsterAttack;
+    				cout << "Flaming Dragon hits for " << MonsterAttack << "!" << endl;
+
+    				//check if player is killed
+    				if(Player_HP <= 0)
+    				{
+    					break;
+    				}
+
+
+    				srand(time(0));
+    				PlayerAttack = 50+(rand()%100);
+    				Dragon_HP = Dragon_HP - PlayerAttack;
+    				cout << "You hit for " << PlayerAttack << "!" << endl;
+    			}
+    		}
+    		else
+    		{
+    			while(Dragon_HP>0 && Player_HP>0)
+    			{
+    				srand(time(0));
+    				PlayerAttack = 50+(rand()%100);
+    				Dragon_HP = Dragon_HP - PlayerAttack;
+    				cout << "You hit for " << PlayerAttack << "!" << endl;
+
+    				//check if monster is killed
+    				if(Dragon_HP <= 0)
+    				{
+    					break;
+    				}
+
+    				srand(time(0));
+    				MonsterAttack = 50+(rand()%100);
+    				Player_HP = Player_HP - MonsterAttack;
+    				cout << "Flaming Dragon hits for " << MonsterAttack << "!" << endl;
+    			}
+    		}
+    	}
+    	if(Player_HP <= 0)
+    	{
+    		cout << "It's a shame you came all this way just to get barbecued!" << endl;
+    	}
+    	else
+    	{
+    		cout << "You did it! Your enemies lay vanquished at the hand of your RNG!" << endl;
     	}
     }
+
 }
