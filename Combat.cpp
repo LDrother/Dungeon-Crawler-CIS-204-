@@ -28,7 +28,7 @@ Combat::Combat()
     		while(ob.Bush_HP>0 && ob.Player_HP>0)
     		{
     			srand(time(0));
-    			MonsterAttack = 2+(rand()%3);
+    			MonsterAttack = 2+(rand()%2);
     			ob.Player_HP = ob.Player_HP - MonsterAttack;
     			cout << "Thorny Bush hits for " << MonsterAttack << "!" << endl;
 
@@ -40,7 +40,7 @@ Combat::Combat()
 
 
     			srand(time(0));
-    			PlayerAttack = 5+(rand()%6);
+    			PlayerAttack = 5+(rand()%2);
     			ob.Bush_HP = ob.Bush_HP - PlayerAttack;
     			cout << "You hit for " << PlayerAttack << "!" << endl;
     		}
@@ -50,7 +50,7 @@ Combat::Combat()
     		while(ob.Bush_HP>0 && ob.Player_HP>0)
     		{
     			srand(time(0));
-    			PlayerAttack = 5+(rand()%6);
+    			PlayerAttack = 5+(rand()%2);
     			ob.Bush_HP = ob.Bush_HP - PlayerAttack;
     			cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -61,7 +61,7 @@ Combat::Combat()
     			}
 
     			srand(time(0));
-    			MonsterAttack = 2+(rand()%3);
+    			MonsterAttack = 2+(rand()%2);
     			ob.Player_HP = ob.Player_HP - MonsterAttack;
     			cout << "Thorny Bush hits for " << MonsterAttack << "!" << endl;
     		}
@@ -127,7 +127,7 @@ Combat::Combat()
     			while(ob.Spider_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				MonsterAttack = 6+(rand()%8);
+    				MonsterAttack = 6+(rand()%3);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Giant Spider hits for " << MonsterAttack << "!" << endl;
 
@@ -139,7 +139,7 @@ Combat::Combat()
 
 
     				srand(time(0));
-    				PlayerAttack = 10+(rand()%11);
+    				PlayerAttack = 10+(rand()%2);
     				ob.Spider_HP = ob.Spider_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
     			}
@@ -149,7 +149,7 @@ Combat::Combat()
     			while(ob.Spider_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				PlayerAttack = 10+(rand()%11);
+    				PlayerAttack = 10+(rand()%2);
     				ob.Spider_HP = ob.Spider_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -160,7 +160,7 @@ Combat::Combat()
     				}
 
     				srand(time(0));
-    				MonsterAttack = 6+(rand()%8);
+    				MonsterAttack = 6+(rand()%3);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Giant Spider hits for " << MonsterAttack << "!" << endl;
     			}
@@ -173,7 +173,7 @@ Combat::Combat()
     			while(ob.Spider_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				MonsterAttack = 6+(rand()%8);
+    				MonsterAttack = 6+(rand()%3);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Giant Spider hits for " << MonsterAttack << "!" << endl;
 
@@ -185,7 +185,7 @@ Combat::Combat()
 
 
     				srand(time(0));
-    				PlayerAttack = 5+(rand()%6);
+    				PlayerAttack = 5+(rand()%2);
     				ob.Spider_HP = ob.Spider_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
     			}
@@ -195,7 +195,7 @@ Combat::Combat()
     			while(ob.Spider_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				PlayerAttack = 5+(rand()%6);
+    				PlayerAttack = 5+(rand()%2);
     				ob.Spider_HP = ob.Spider_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -206,7 +206,7 @@ Combat::Combat()
     				}
 
     				srand(time(0));
-    				MonsterAttack = 6+(rand()%8);
+    				MonsterAttack = 6+(rand()%3);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Giant Spider hits for " << MonsterAttack << "!" << endl;
     			}
@@ -277,7 +277,7 @@ Combat::Combat()
     			while(ob.Dwarf_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				MonsterAttack = 10+(rand()%14);
+    				MonsterAttack = 10+(rand()%15);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Flatulent Dwarf hits for " << MonsterAttack << "!" << endl;
 
@@ -289,7 +289,7 @@ Combat::Combat()
 
 
     				srand(time(0));
-    				PlayerAttack = 8+(rand()%9);
+    				PlayerAttack = 8+(rand()%2);
     				ob.Dwarf_HP = ob.Dwarf_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
     			}
@@ -299,7 +299,7 @@ Combat::Combat()
     			while(ob.Dwarf_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				PlayerAttack = 8+(rand()%9);
+    				PlayerAttack = 8+(rand()%2);
     				ob.Dwarf_HP = ob.Dwarf_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -310,7 +310,7 @@ Combat::Combat()
     				}
 
     				srand(time(0));
-    				MonsterAttack = 10+(rand()%14);
+    				MonsterAttack = 10+(rand()%5);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Flatulent Dwarf hits for " << MonsterAttack << "!" << endl;
     			}
@@ -323,7 +323,7 @@ Combat::Combat()
     			while(ob.Dwarf_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				MonsterAttack = 10+(rand()%14);
+    				MonsterAttack = 10+(rand()%5);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Flatulent Dwarf hits for " << MonsterAttack << "!" << endl;
 
@@ -335,7 +335,7 @@ Combat::Combat()
 
 
     				srand(time(0));
-    				PlayerAttack = 5+(rand()%6);
+    				PlayerAttack = 5+(rand()%2);
     				ob.Dwarf_HP = ob.Dwarf_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
     			}
@@ -345,7 +345,7 @@ Combat::Combat()
     			while(ob.Dwarf_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				PlayerAttack = 5+(rand()%6);
+    				PlayerAttack = 5+(rand()%2);
     				ob.Dwarf_HP = ob.Dwarf_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -356,7 +356,7 @@ Combat::Combat()
     				}
 
     				srand(time(0));
-    				MonsterAttack = 10+(rand()%14);
+    				MonsterAttack = 10+(rand()%5);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Flatulent Dwarf hits for " << MonsterAttack << "!" << endl;
     			}
@@ -427,7 +427,7 @@ Combat::Combat()
     			while(ob.Minotaur_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				MonsterAttack = 18+(rand()%22);
+    				MonsterAttack = 18+(rand()%5);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Raging Minotaur hits for " << MonsterAttack << "!" << endl;
 
@@ -439,7 +439,7 @@ Combat::Combat()
 
 
     				srand(time(0));
-    				PlayerAttack = 15+(rand()%16);
+    				PlayerAttack = 15+(rand()%2);
     				ob.Minotaur_HP = ob.Minotaur_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
     			}
@@ -449,7 +449,7 @@ Combat::Combat()
     			while(ob.Minotaur_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				PlayerAttack = 15+(rand()%16);
+    				PlayerAttack = 15+(rand()%2);
     				ob.Minotaur_HP = ob.Minotaur_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -460,7 +460,7 @@ Combat::Combat()
     				}
 
     				srand(time(0));
-    				MonsterAttack = 18+(rand()%22);
+    				MonsterAttack = 18+(rand()%5);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Raging Minotaur hits for " << MonsterAttack << "!" << endl;
     			}
@@ -473,7 +473,7 @@ Combat::Combat()
     			while(ob.Minotaur_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				MonsterAttack = 18+(rand()%22);
+    				MonsterAttack = 18+(rand()%5);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Raging Minotaur hits for " << MonsterAttack << "!" << endl;
 
@@ -485,7 +485,7 @@ Combat::Combat()
 
 
     				srand(time(0));
-    				PlayerAttack = 5+(rand()%6);
+    				PlayerAttack = 5+(rand()%2);
     				ob.Minotaur_HP = ob.Minotaur_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
     			}
@@ -495,7 +495,7 @@ Combat::Combat()
     			while(ob.Minotaur_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				PlayerAttack = 5+(rand()%6);
+    				PlayerAttack = 5+(rand()%2);
     				ob.Minotaur_HP = ob.Minotaur_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -506,7 +506,7 @@ Combat::Combat()
     				}
 
     				srand(time(0));
-    				MonsterAttack = 18+(rand()%22);
+    				MonsterAttack = 18+(rand()%5);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Raging Minotaur hits for " << MonsterAttack << "!" << endl;
     			}
@@ -578,7 +578,7 @@ Combat::Combat()
 
     			{
     				srand(time(0));
-    				MonsterAttack = 25+(rand()%26);
+    				MonsterAttack = 25+(rand()%2);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Old Lady hits for " << MonsterAttack << "!" << endl;
 
@@ -590,7 +590,7 @@ Combat::Combat()
 
 
     				srand(time(0));
-    				PlayerAttack = 25+(rand()%26);
+    				PlayerAttack = 25+(rand()%2);
     				ob.Lady_HP = ob.Lady_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
     			}
@@ -600,7 +600,7 @@ Combat::Combat()
     			while(ob.Lady_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				PlayerAttack = 25+(rand()%26);
+    				PlayerAttack = 25+(rand()%2);
     				ob.Lady_HP = ob.Lady_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -611,7 +611,7 @@ Combat::Combat()
     				}
 
     				srand(time(0));
-    				MonsterAttack = 25+(rand()%26);
+    				MonsterAttack = 25+(rand()%2);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Old Lady hits for " << MonsterAttack << "!" << endl;
     			}
@@ -628,7 +628,7 @@ Combat::Combat()
     			while(ob.Lady_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				MonsterAttack = 25+(rand()%26);
+    				MonsterAttack = 25+(rand()%2);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Old Lady hits for " << MonsterAttack << "!" << endl;
 
@@ -640,7 +640,7 @@ Combat::Combat()
 
 
     				srand(time(0));
-    				PlayerAttack = 15+(rand()%16);
+    				PlayerAttack = 15+(rand()%2);
     				ob.Lady_HP = ob.Lady_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
     			}
@@ -650,7 +650,7 @@ Combat::Combat()
     			while(ob.Lady_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				PlayerAttack = 15+(rand()%16);
+    				PlayerAttack = 15+(rand()%2);
     				ob.Lady_HP = ob.Lady_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -661,7 +661,7 @@ Combat::Combat()
     				}
 
     				srand(time(0));
-    				MonsterAttack = 25+(rand()%26);
+    				MonsterAttack = 25+(rand()%2);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Old Lady hits for " << MonsterAttack << "!" << endl;
     			}
@@ -674,7 +674,7 @@ Combat::Combat()
     			while(ob.Lady_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				MonsterAttack = 25+(rand()%26);
+    				MonsterAttack = 25+(rand()%2);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Old Lady hits for " << MonsterAttack << "!" << endl;
 
@@ -686,7 +686,7 @@ Combat::Combat()
 
 
     				srand(time(0));
-    				PlayerAttack = 5+(rand()%6);
+    				PlayerAttack = 5+(rand()%2);
     				ob.Lady_HP = ob.Lady_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
     			}
@@ -696,7 +696,7 @@ Combat::Combat()
     			while(ob.Lady_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				PlayerAttack = 5+(rand()%6);
+    				PlayerAttack = 5+(rand()%2);
     				ob.Lady_HP = ob.Lady_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -707,7 +707,7 @@ Combat::Combat()
     				}
 
     				srand(time(0));
-    				MonsterAttack = 25+(rand()%26);
+    				MonsterAttack = 25+(rand()%2);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Old Lady hits for " << MonsterAttack << "!" << endl;
     			}
@@ -778,7 +778,7 @@ Combat::Combat()
     			while(ob.Troll_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				MonsterAttack = 32+(rand()%36);
+    				MonsterAttack = 32+(rand()%5);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Cave Troll hits for " << MonsterAttack << "!" << endl;
 
@@ -790,7 +790,7 @@ Combat::Combat()
 
 
     				srand(time(0));
-    				PlayerAttack = 15+(rand()%16);
+    				PlayerAttack = 15+(rand()%2);
     				ob.Troll_HP = ob.Troll_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
     			}
@@ -800,7 +800,7 @@ Combat::Combat()
     			while(ob.Troll_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				PlayerAttack = 15+(rand()%16);
+    				PlayerAttack = 15+(rand()%2);
     				ob.Troll_HP = ob.Troll_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -811,7 +811,7 @@ Combat::Combat()
     				}
 
     				srand(time(0));
-    				MonsterAttack = 32+(rand()%36);
+    				MonsterAttack = 32+(rand()%5);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Cave Troll hits for " << MonsterAttack << "!" << endl;
     			}
@@ -824,7 +824,7 @@ Combat::Combat()
     			while(ob.Troll_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				MonsterAttack = 32+(rand()%36);
+    				MonsterAttack = 32+(rand()%5);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Cave Troll hits for " << MonsterAttack << "!" << endl;
 
@@ -836,7 +836,7 @@ Combat::Combat()
 
 
     				srand(time(0));
-    				PlayerAttack = 5+(rand()%6);
+    				PlayerAttack = 5+(rand()%2);
     				ob.Troll_HP = ob.Troll_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
     			}
@@ -846,7 +846,7 @@ Combat::Combat()
     			while(ob.Troll_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				PlayerAttack = 5+(rand()%6);
+    				PlayerAttack = 5+(rand()%2);
     				ob.Troll_HP = ob.Troll_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -857,7 +857,7 @@ Combat::Combat()
     				}
 
     				srand(time(0));
-    				MonsterAttack = 32+(rand()%36);
+    				MonsterAttack = 32+(rand()%5);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Cave Troll hits for " << MonsterAttack << "!" << endl;
     			}
@@ -927,7 +927,7 @@ Combat::Combat()
     			while(ob.Vampire_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				MonsterAttack = 40+(rand()%45);
+    				MonsterAttack = 40+(rand()%6);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Master Vampire hits for " << MonsterAttack << "!" << endl;
 
@@ -939,7 +939,7 @@ Combat::Combat()
 
 
     				srand(time(0));
-    				PlayerAttack = 45+(rand()%46);
+    				PlayerAttack = 45+(rand()%2);
     				ob.Vampire_HP = ob.Vampire_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
     			}
@@ -949,7 +949,7 @@ Combat::Combat()
     			while(ob.Vampire_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				PlayerAttack = 45+(rand()%46);
+    				PlayerAttack = 45+(rand()%2);
     				ob.Vampire_HP = ob.Vampire_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -960,7 +960,7 @@ Combat::Combat()
     				}
 
     				srand(time(0));
-    				MonsterAttack = 40+(rand()%45);
+    				MonsterAttack = 40+(rand()%6);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Master Vampire hits for " << MonsterAttack << "!" << endl;
     			}
@@ -973,7 +973,7 @@ Combat::Combat()
     			while(ob.Vampire_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				MonsterAttack = 40+(rand()%45);
+    				MonsterAttack = 40+(rand()%6);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Master Vampire hits for " << MonsterAttack << "!" << endl;
 
@@ -985,7 +985,7 @@ Combat::Combat()
 
 
     				srand(time(0));
-    				PlayerAttack = 5+(rand()%6);
+    				PlayerAttack = 5+(rand()%2);
     				ob.Vampire_HP = ob.Vampire_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
     			}
@@ -995,7 +995,7 @@ Combat::Combat()
     			while(ob.Vampire_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				PlayerAttack = 5+(rand()%6);
+    				PlayerAttack = 5+(rand()%2);
     				ob.Vampire_HP = ob.Vampire_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -1006,7 +1006,7 @@ Combat::Combat()
     				}
 
     				srand(time(0));
-    				MonsterAttack = 40+(rand()%45);
+    				MonsterAttack = 40+(rand()%6);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Master Vampire hits for " << MonsterAttack << "!" << endl;
     			}
@@ -1073,7 +1073,7 @@ Combat::Combat()
     			while(ob.Assassin_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				MonsterAttack = 50+(rand()%70);
+    				MonsterAttack = 50+(rand()%21);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Enraged Assassin hits for " << MonsterAttack << "!" << endl;
 
@@ -1085,7 +1085,7 @@ Combat::Combat()
 
 
     				srand(time(0));
-    				PlayerAttack = 45+(rand()%46);
+    				PlayerAttack = 45+(rand()%2);
     				ob.Assassin_HP = ob.Assassin_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
     			}
@@ -1095,7 +1095,7 @@ Combat::Combat()
     			while(ob.Assassin_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				PlayerAttack = 45+(rand()%46);
+    				PlayerAttack = 45+(rand()%2);
     				ob.Assassin_HP = ob.Assassin_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -1106,7 +1106,7 @@ Combat::Combat()
     				}
 
     				srand(time(0));
-    				MonsterAttack = 50+(rand()%70);
+    				MonsterAttack = 50+(rand()%21);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Enraged Assassin hits for " << MonsterAttack << "!" << endl;
     			}
@@ -1119,7 +1119,7 @@ Combat::Combat()
     			while(ob.Assassin_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				MonsterAttack = 50+(rand()%70);
+    				MonsterAttack = 50+(rand()%21);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Enraged Assassin hits for " << MonsterAttack << "!" << endl;
 
@@ -1131,7 +1131,7 @@ Combat::Combat()
 
 
     				srand(time(0));
-    				PlayerAttack = 30+(rand()%31);
+    				PlayerAttack = 30+(rand()%2);
     				ob.Assassin_HP = ob.Assassin_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
     			}
@@ -1141,7 +1141,7 @@ Combat::Combat()
     			while(ob.Assassin_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				PlayerAttack = 30+(rand()%31);
+    				PlayerAttack = 30+(rand()%2);
     				ob.Assassin_HP = ob.Assassin_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -1152,7 +1152,7 @@ Combat::Combat()
     				}
 
     				srand(time(0));
-    				MonsterAttack = 50+(rand()%70);
+    				MonsterAttack = 50+(rand()%21);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Enraged Assassin hits for " << MonsterAttack << "!" << endl;
     			}
@@ -1168,7 +1168,7 @@ Combat::Combat()
     			while(ob.Assassin_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				MonsterAttack = 50+(rand()%70);
+    				MonsterAttack = 50+(rand()%21);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Enraged Assassin hits for " << MonsterAttack << "!" << endl;
 
@@ -1180,7 +1180,7 @@ Combat::Combat()
 
 
     				srand(time(0));
-    				PlayerAttack = 5+(rand()%6);
+    				PlayerAttack = 5+(rand()%2);
     				ob.Assassin_HP = ob.Assassin_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
     			}
@@ -1190,7 +1190,7 @@ Combat::Combat()
     			while(ob.Assassin_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				PlayerAttack = 5+(rand()%6);
+    				PlayerAttack = 5+(rand()%2);
     				ob.Assassin_HP = ob.Assassin_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -1201,7 +1201,7 @@ Combat::Combat()
     				}
 
     				srand(time(0));
-    				MonsterAttack = 50+(rand()%70);
+    				MonsterAttack = 50+(rand()%21);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Enraged Assassin hits for " << MonsterAttack << "!" << endl;
     			}
@@ -1214,7 +1214,7 @@ Combat::Combat()
     			while(ob.Assassin_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				MonsterAttack = 50+(rand()%70);
+    				MonsterAttack = 50+(rand()%21);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Enraged Assassin hits for " << MonsterAttack << "!" << endl;
 
@@ -1226,7 +1226,7 @@ Combat::Combat()
 
 
     				srand(time(0));
-    				PlayerAttack = 5+(rand()%6);
+    				PlayerAttack = 5+(rand()%2);
     				ob.Assassin_HP = ob.Assassin_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
     			}
@@ -1236,7 +1236,7 @@ Combat::Combat()
     			while(ob.Assassin_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				PlayerAttack = 5+(rand()%6);
+    				PlayerAttack = 5+(rand()%2);
     				ob.Assassin_HP = ob.Assassin_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -1247,7 +1247,7 @@ Combat::Combat()
     				}
 
     				srand(time(0));
-    				MonsterAttack = 50+(rand()%70);
+    				MonsterAttack = 50+(rand()%21);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Enraged Assassin hits for " << MonsterAttack << "!" << endl;
     			}
@@ -1323,7 +1323,7 @@ Combat::Combat()
     			while(ob.Dragon_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				MonsterAttack = 50+(rand()%100);
+    				MonsterAttack = 50+(rand()%51);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Flaming Dragon hits for " << MonsterAttack << "!" << endl;
 
@@ -1335,7 +1335,7 @@ Combat::Combat()
 
 
     				srand(time(0));
-    				PlayerAttack = 50+(rand()%100);
+    				PlayerAttack = 50+(rand()%51);
     				ob.Dragon_HP = ob.Dragon_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
     			}
@@ -1345,7 +1345,7 @@ Combat::Combat()
     			while(ob.Dragon_HP>0 && ob.Player_HP>0)
     			{
     				srand(time(0));
-    				PlayerAttack = 50+(rand()%100);
+    				PlayerAttack = 50+(rand()%51);
     				ob.Dragon_HP = ob.Dragon_HP - PlayerAttack;
     				cout << "You hit for " << PlayerAttack << "!" << endl;
 
@@ -1356,7 +1356,7 @@ Combat::Combat()
     				}
 
     				srand(time(0));
-    				MonsterAttack = 50+(rand()%100);
+    				MonsterAttack = 50+(rand()%51);
     				ob.Player_HP = ob.Player_HP - MonsterAttack;
     				cout << "Flaming Dragon hits for " << MonsterAttack << "!" << endl;
     			}
