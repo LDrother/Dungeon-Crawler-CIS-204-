@@ -72,10 +72,13 @@ Combat::Combat()
 
     		cout << "Press 0 to exit." << endl;
     		cin >> ob.choice;
+    		exit(0);
     	}
     	else
     	{
     		cout << "That bush stood no chance. You should really be picking on someone your own size." << endl;
+
+    		while(ob.Player_HP > 0 && ob.Rm_Num == 1){
     		ob.menu();
     		cin >> ob.choice;
     		while (ob.choice < 0 || ob.choice > 3){
@@ -93,22 +96,23 @@ Combat::Combat()
 
         if(ob.choice == 2){
             Map();
-            ob.menu();
-            cin >> ob.choice;
+//            ob.menu();
+//            cin >> ob.choice;
         }
 
         if(ob.choice == 3){
             inventory();
-            ob.menu();
-            cin >> ob.choice;
-            cout << endl;
+//            ob.menu();
+//            cin >> ob.choice;
+//            cout << endl;
         }
 
         if (ob.choice == 0){
 
         cout << "\nThanks for playing." << endl;
+        exit(0);
         }
-
+    		}
     }
 }
 
@@ -216,13 +220,15 @@ Combat::Combat()
     	{
     		cout << "The Giant Spider has eaten you alive!!" << endl;
 
-    		cout << "Press 0 to exit." << endl;
+            cout << "Press 0 to exit." << endl;
     		cin >> ob.choice;
+    		exit(0);
     	}
     	else
     	{
     		cout << "Your foe is now a pile of goo." << endl;
 
+    		while(ob.Player_HP > 0 && ob.Rm_Num == 2){
     		ob.menu();
     		cin >> ob.choice;
     		while (ob.choice < 0 || ob.choice > 3){
@@ -240,27 +246,30 @@ Combat::Combat()
 
         if(ob.choice == 2){
             Map();
-            ob.menu();
-            cin >> ob.choice;
+//            ob.menu();
+//            cin >> ob.choice;
         }
 
         if(ob.choice == 3){
             inventory();
-            ob.menu();
-            cin >> ob.choice;
-            cout << endl;
+//            ob.menu();
+//            cin >> ob.choice;
+//            cout << endl;
         }
 
         if (ob.choice == 0){
 
         cout << "\nThanks for playing." << endl;
-    }
+        exit(0);
+        }
+    		}
     	}
     }
 
     //ROOM THREE INFORMATION
     if(ob.Rm_Num = 3)
     {
+        ob.Player_HP = 20;
     	//coin flip to determine first attacker
     	srand(time(0));
     	FirstAttacker = 1+(rand()%2);
@@ -368,11 +377,13 @@ Combat::Combat()
 
     		cout << "Press 0 to exit." << endl;
     		cin >> ob.choice;
+    		exit(0);
     	}
     	else
     	{
     		cout << "Congratulations... you survived a fart." << endl;
 
+    		while(ob.Player_HP > 0 && ob.Rm_Num == 3){
     		ob.menu();
     		cin >> ob.choice;
     		while (ob.choice < 0 || ob.choice > 3){
@@ -390,21 +401,23 @@ Combat::Combat()
 
         if(ob.choice == 2){
             Map();
-            ob.menu();
-            cin >> ob.choice;
+//            ob.menu();
+//            cin >> ob.choice;
         }
 
         if(ob.choice == 3){
             inventory();
-            ob.menu();
-            cin >> ob.choice;
-            cout << endl;
+//            ob.menu();
+//            cin >> ob.choice;
+//            cout << endl;
         }
 
         if (ob.choice == 0){
 
         cout << "\nThanks for playing." << endl;
-    }
+        exit(0);
+        }
+    		}
     	}
     }
 
@@ -518,11 +531,13 @@ Combat::Combat()
 
     		cout << "Press 0 to exit." << endl;
     		cin >> ob.choice;
+    		exit(0);
     	}
     	else
     	{
     		cout << "The Minotaur will rage no more!" << endl;
 
+    		while(ob.Player_HP > 0 && ob.Rm_Num == 4){
     		ob.menu();
     		cin >> ob.choice;
     		while (ob.choice < 0 || ob.choice > 3){
@@ -540,21 +555,23 @@ Combat::Combat()
 
         if(ob.choice == 2){
             Map();
-            ob.menu();
-            cin >> ob.choice;
+//            ob.menu();
+//            cin >> ob.choice;
         }
 
         if(ob.choice == 3){
             inventory();
-            ob.menu();
-            cin >> ob.choice;
-            cout << endl;
+//            ob.menu();
+//            cin >> ob.choice;
+//            cout << endl;
         }
 
         if (ob.choice == 0){
 
         cout << "\nThanks for playing." << endl;
-    }
+        exit(0);
+        }
+    		}
     	}
     }
 
@@ -719,11 +736,13 @@ Combat::Combat()
 
     		cout << "Press 0 to exit." << endl;
     		cin >> ob.choice;
+    		exit(0);
     	}
     	else
     	{
     		cout << "Hooray you beat an old lady! How do you feel about that?" << endl;
 
+    		while(ob.Player_HP > 0 && ob.Rm_Num == 5){
     		ob.menu();
     		cin >> ob.choice;
     		while (ob.choice < 0 || ob.choice > 3){
@@ -741,21 +760,23 @@ Combat::Combat()
 
         if(ob.choice == 2){
             Map();
-            ob.menu();
-            cin >> ob.choice;
+//            ob.menu();
+//            cin >> ob.choice;
         }
 
         if(ob.choice == 3){
             inventory();
-            ob.menu();
-            cin >> ob.choice;
-            cout << endl;
+//            ob.menu();
+//            cin >> ob.choice;
+//            cout << endl;
         }
 
         if (ob.choice == 0){
 
         cout << "\nThanks for playing." << endl;
-    }
+        exit(0);
+        }
+    		}
     	}
     }
 
@@ -869,11 +890,13 @@ Combat::Combat()
 
     		cout << "Press 0 to exit." << endl;
     		cin >> ob.choice;
+    		exit(0);
     	}
     	else
     	{
     		cout << "You done outsmarted that troll." << endl;
 
+    		while(ob.Player_HP > 0 && ob.Rm_Num == 6){
     		ob.menu();
     		cin >> ob.choice;
     		while (ob.choice < 0 || ob.choice > 3){
@@ -891,21 +914,23 @@ Combat::Combat()
 
         if(ob.choice == 2){
             Map();
-            ob.menu();
-            cin >> ob.choice;
+//            ob.menu();
+//            cin >> ob.choice;
         }
 
         if(ob.choice == 3){
             inventory();
-            ob.menu();
-            cin >> ob.choice;
-            cout << endl;
+//            ob.menu();
+//            cin >> ob.choice;
+//            cout << endl;
         }
 
         if (ob.choice == 0){
 
         cout << "\nThanks for playing." << endl;
-    }
+        exit(0);
+        }
+    		}
     	}
     }
 
@@ -920,7 +945,7 @@ Combat::Combat()
     	if(in.armour == 22)
     	{
     		//Player HP increased
-    		ob.Player_HP = 135
+    		ob.Player_HP = 135;
 
     		if(FirstAttacker == 1)
     		{
@@ -1015,11 +1040,16 @@ Combat::Combat()
     	if(ob.Player_HP <= 0)
     	{
     		cout << "His royal thirstiness has turned you into a raisin!" << endl;
+
+    		cout << "Press 0 to exit." << endl;
+    		cin >> ob.choice;
+    		exit(0);
     	}
     	else
     	{
     		cout << "and... that vampire ran off at the sight of your garlic. What a strange way to defeat an enemy." << endl;
 
+    		while(ob.Player_HP > 0 && ob.Rm_Num == 7){
     		ob.menu();
     		cin >> ob.choice;
     		while (ob.choice < 0 || ob.choice > 3){
@@ -1037,21 +1067,23 @@ Combat::Combat()
 
         if(ob.choice == 2){
             Map();
-            ob.menu();
-            cin >> ob.choice;
+//            ob.menu();
+//            cin >> ob.choice;
         }
 
         if(ob.choice == 3){
             inventory();
-            ob.menu();
-            cin >> ob.choice;
-            cout << endl;
+//            ob.menu();
+//            cin >> ob.choice;
+//            cout << endl;
         }
 
         if (ob.choice == 0){
 
         cout << "\nThanks for playing." << endl;
+        exit(0);
         }
+    		}
     }
     }
 
@@ -1066,7 +1098,7 @@ Combat::Combat()
     	if(in.armour == 30)
     	{
     		//Player HP increased
-    		ob.Player_HP = 210
+    		ob.Player_HP = 210;
 
     		if(FirstAttacker == 1)
     		{
@@ -1161,7 +1193,7 @@ Combat::Combat()
     	if(in.armour == 31)
     	{
     		//Player HP increased
-    		ob.Player_HP = 100
+    		ob.Player_HP = 100;
 
     		if(FirstAttacker == 1)
     		{
@@ -1256,11 +1288,16 @@ Combat::Combat()
     	if(ob.Player_HP <= 0)
     	{
     		cout << "You never saw him coming... that assassin got you good!" << endl;
+
+    		cout << "Press 0 to exit." << endl;
+    		cin >> ob.choice;
+    		exit(0);
     	}
     	else
     	{
     		cout << "Lucky you, the final battle awaits..." << endl;
 
+    		while(ob.Player_HP > 0 && ob.Rm_Num == 8){
     		ob.menu();
     		cin >> ob.choice;
     		while (ob.choice < 0 || ob.choice > 3){
@@ -1278,21 +1315,23 @@ Combat::Combat()
 
         if(ob.choice == 2){
             Map();
-            ob.menu();
-            cin >> ob.choice;
+//            ob.menu();
+//            cin >> ob.choice;
         }
 
         if(ob.choice == 3){
             inventory();
-            ob.menu();
-            cin >> ob.choice;
-            cout << endl;
+//            ob.menu();
+//            cin >> ob.choice;
+//            cout << endl;
         }
 
         if (ob.choice == 0){
 
         cout << "\nThanks for playing." << endl;
+        exit(0);
         }
+    		}
     }
     }
 
@@ -1316,7 +1355,7 @@ Combat::Combat()
     	if(in.armour == 32)
     	{
     		//Player HP increased
-    		ob.Player_HP = 340
+    		ob.Player_HP = 340;
 
     		if(FirstAttacker == 1)
     		{
@@ -1365,11 +1404,19 @@ Combat::Combat()
     	if(ob.Player_HP <= 0)
     	{
     		cout << "It's a shame you came all this way just to get barbecued!" << endl;
+
+    		cout << "Press 0 to exit." << endl;
+    		cin >> ob.choice;
+    		exit(0);
     	}
     	else
     	{
     		cout << "You did it! Your enemies lay vanquished at the hand of your RNG!" << endl;
+    		cout << "Press 0 to claim your victory!" << endl;
+    		cin >> ob.choice;
+    		exit(0);
     	}
     }
 
 }
+
