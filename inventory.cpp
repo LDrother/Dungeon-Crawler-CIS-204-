@@ -11,7 +11,9 @@ inventory::inventory()
 switch(oj.Rm_Num)
 {
 case 0:
-
+case 1:
+case 2:
+case 3:
   cout << "You have selected to change your armour." << endl;
   cout << "You are wearing simple sandals, a plain cloak, and carrying a walking stick.\n" << endl;
 
@@ -24,7 +26,9 @@ case 0:
 
     break;
 
-case 1:
+case 4:
+case 5:
+case 6:
 
   cout << "You have selected to change your armour.\n" << endl;
 
@@ -40,7 +44,9 @@ case 1:
 
 break;
 
-case 2:
+case 7:
+case 8:
+case 9:
 
   cout << "You have selected to change your armour.\n" << endl;
 
@@ -60,23 +66,8 @@ case 2:
 break;
 }
 
-   if(oj.choice == 3)
-{
-        if (oj.Rm_Num == 0)
-        {
-        switch(oj.Rm_Num == 0);
-        }
-        if (oj.Rm_Num == 1)
-        {
-        switch (oj.Rm_Num == 1);
-        }
-        switch (oj.Rm_Num == 2)
-        {
-         switch (oj.Rm_Num == 2);
-        }
-}
+cin >> armour;
 
-        cin >> armour;
 {
  switch(armour)
  {
