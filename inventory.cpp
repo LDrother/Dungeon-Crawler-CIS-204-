@@ -13,7 +13,7 @@ switch(oj.Rm_Num)
 case 0:
 case 1:
 case 2:
-case 3:
+
   cout << "You have selected to change your armour." << endl;
   cout << "You are wearing simple sandals, a plain cloak, and carrying a walking stick.\n" << endl;
 
@@ -26,9 +26,10 @@ case 3:
 
     break;
 
+case 3:
 case 4:
 case 5:
-case 6:
+
 
   cout << "You have selected to change your armour.\n" << endl;
 
@@ -44,6 +45,7 @@ case 6:
 
 break;
 
+case 6:
 case 7:
 case 8:
 case 9:
@@ -66,10 +68,10 @@ case 9:
 break;
 }
 
-cin >> armour;
+cin >> oj.armour;
 
 {
- switch(armour)
+ switch(oj.armour)
  {
   case 10:
   cout << "You are wearing simple sandals, a plain cloak, and carrying a walking stick." << endl;
@@ -117,10 +119,9 @@ cin >> armour;
 
   default:
  	cout << "You're not going into battle naked and unarmed! PUT SOME CLOTHES ON AND GRAB SOMETHING TO HIT BAD GUYS WITH!" << endl;
- 	cin >> armour;
+ 	cin >> oj.armour;
 
 
  }
 }
 }
-
