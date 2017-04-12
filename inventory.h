@@ -6,7 +6,6 @@ class inventory
 {
     public:
 
-        int armour = 0;
         inventory();
 
 
