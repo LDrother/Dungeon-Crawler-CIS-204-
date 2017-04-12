@@ -124,7 +124,7 @@ Combat::Combat()
     	FirstAttacker = 1+(rand()%2);
 
     	//combat taking into account the room, monster, player's equipped equipment
-    	if(in.armour == 12)
+    	if(ob.armour == 12)
     	{
     		if(FirstAttacker == 1)
     		{
@@ -252,6 +252,7 @@ Combat::Combat()
 
         if(ob.choice == 3){
             inventory();
+            cin >> ob.armour;
 //            ob.menu();
 //            cin >> ob.choice;
 //            cout << endl;
@@ -269,14 +270,16 @@ Combat::Combat()
     //ROOM THREE INFORMATION
     if(ob.Rm_Num = 3)
     {
-        ob.Player_HP = 20;
+        ob.Player_HP = 1200;
     	//coin flip to determine first attacker
     	srand(time(0));
     	FirstAttacker = 1+(rand()%2);
+cout << ob.armour << endl;
 
     	//combat taking into account the room, monster, player's equipped equipment
-    	if(in.armour == 13)
+    	if(ob.armour == 13)
     	{
+
 
     		//Player HP increased
     		ob.Player_HP = 30;
@@ -429,7 +432,7 @@ Combat::Combat()
     	FirstAttacker = 1+(rand()%2);
 
     	//combat taking into account the room, monster, player's equipped equipment
-    	if(in.armour == 13)
+    	if(ob.armour == 13)
     	{
 
     		//Player HP increased
@@ -583,7 +586,7 @@ Combat::Combat()
     	FirstAttacker = 1+(rand()%2);
 
     	//combat taking into account the room, monster, player's equipped equipment
-    	if(in.armour == 21)
+    	if(ob.armour == 21)
     	{
 
     		//Player HP increased
@@ -634,7 +637,7 @@ Combat::Combat()
     			}
     		}
     	}
-    	if(in.armour == 11)
+    	if(ob.armour == 11)
     	{
 
     		//Player HP increased
@@ -788,7 +791,7 @@ Combat::Combat()
     	FirstAttacker = 1+(rand()%2);
 
     	//combat taking into account the room, monster, player's equipped equipment
-    	if(in.armour == 20)
+    	if(ob.armour == 20)
     	{
 
     		//Player HP increased
@@ -942,7 +945,7 @@ Combat::Combat()
     	FirstAttacker = 1+(rand()%2);
 
     	//combat taking into account the room, monster, player's equipped equipment
-    	if(in.armour == 22)
+    	if(ob.armour == 22)
     	{
     		//Player HP increased
     		ob.Player_HP = 135;
@@ -1095,7 +1098,7 @@ Combat::Combat()
     	FirstAttacker = 1+(rand()%2);
 
     	//combat taking into account the room, monster, player's equipped equipment
-    	if(in.armour == 30)
+    	if(ob.armour == 30)
     	{
     		//Player HP increased
     		ob.Player_HP = 210;
@@ -1144,7 +1147,7 @@ Combat::Combat()
     			}
     		}
     	}
-    	if(in.armour == 21)
+    	if(ob.armour == 21)
     	{
     		if(FirstAttacker == 1)
     		{
@@ -1190,7 +1193,7 @@ Combat::Combat()
     			}
     		}
     	}
-    	if(in.armour == 31)
+    	if(ob.armour == 31)
     	{
     		//Player HP increased
     		ob.Player_HP = 100;
@@ -1352,7 +1355,7 @@ Combat::Combat()
 
 
    	    //combat taking into account the room, monster, player's equipped equipment
-    	if(in.armour == 32)
+    	if(ob.armour == 32)
     	{
     		//Player HP increased
     		ob.Player_HP = 340;
@@ -1419,4 +1422,3 @@ Combat::Combat()
     }
 
 }
-
