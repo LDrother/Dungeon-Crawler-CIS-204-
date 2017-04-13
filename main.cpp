@@ -1,5 +1,4 @@
 #include <iostream>
-#include "Enemy.h"
 #include "Map.h"
 #include "inventory.h"
 #include "Global.h"
