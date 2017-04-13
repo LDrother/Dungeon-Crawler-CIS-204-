@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void Global::Global()
+Global::Global()
 {
 	int Rm_Num = 0;
 	int Equipment = 10;
