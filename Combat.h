@@ -5,8 +5,9 @@
 class Combat
 {
     public:
+        int FirstAttacker, MonsterAttack, PlayerAttack;
         Combat();
-        
+
 };
 
 #endif
