@@ -1,13 +1,15 @@
 #ifndef INVENTORY_H
 #define INVENTORY_H
-
+#include "Global.h"
 
 class inventory
 {
     public:
 
-        inventory();
+        int armour;
 
+        inventoryfunc();
+        armourset();
 
     protected:
 

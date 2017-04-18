@@ -101,10 +101,13 @@ Combat::Combat()
         }
 
         if(ob.choice == 3){
-            inventory();
+            in.inventoryfunc();
+            cin >> ob.armour;
+            in.armourset();
 //            ob.menu();
 //            cin >> ob.choice;
 //            cout << endl;
+
         }
 
         if (ob.choice == 0){
@@ -119,6 +122,9 @@ Combat::Combat()
     //ROOM TWO INFORMATION
     if(ob.Rm_Num == 2)
     {
+        //Reset player health
+        ob.Player_HP = 10;
+
     	//coin flip to determine first attacker
     	srand(time(0));
     	FirstAttacker = 1+(rand()%2);
@@ -251,8 +257,9 @@ Combat::Combat()
         }
 
         if(ob.choice == 3){
-            inventory();
+            in.inventoryfunc();
             cin >> ob.armour;
+            in.armourset();
 //            ob.menu();
 //            cin >> ob.choice;
 //            cout << endl;
@@ -274,7 +281,7 @@ Combat::Combat()
     	//coin flip to determine first attacker
     	srand(time(0));
     	FirstAttacker = 1+(rand()%2);
-cout << ob.armour << endl;
+        cout << ob.armour << endl;
 
     	//combat taking into account the room, monster, player's equipped equipment
     	if(ob.armour == 13)
@@ -409,7 +416,7 @@ cout << ob.armour << endl;
         }
 
         if(ob.choice == 3){
-            inventory();
+            in.inventoryfunc();
 //            ob.menu();
 //            cin >> ob.choice;
 //            cout << endl;
@@ -563,7 +570,7 @@ cout << ob.armour << endl;
         }
 
         if(ob.choice == 3){
-            inventory();
+            in.inventoryfunc();
 //            ob.menu();
 //            cin >> ob.choice;
 //            cout << endl;
@@ -768,7 +775,7 @@ cout << ob.armour << endl;
         }
 
         if(ob.choice == 3){
-            inventory();
+            in.inventoryfunc();
 //            ob.menu();
 //            cin >> ob.choice;
 //            cout << endl;
@@ -922,7 +929,7 @@ cout << ob.armour << endl;
         }
 
         if(ob.choice == 3){
-            inventory();
+            in.inventoryfunc();
 //            ob.menu();
 //            cin >> ob.choice;
 //            cout << endl;
@@ -1075,7 +1082,7 @@ cout << ob.armour << endl;
         }
 
         if(ob.choice == 3){
-            inventory();
+            in.inventoryfunc();
 //            ob.menu();
 //            cin >> ob.choice;
 //            cout << endl;
@@ -1323,7 +1330,7 @@ cout << ob.armour << endl;
         }
 
         if(ob.choice == 3){
-            inventory();
+            in.inventoryfunc();
 //            ob.menu();
 //            cin >> ob.choice;
 //            cout << endl;

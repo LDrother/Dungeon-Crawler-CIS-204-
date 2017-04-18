@@ -6,7 +6,7 @@
 
 using namespace std;
 
-void menu()
+void mmenu()
 {
         cout << "Press 2 to view map." << endl;
         cout << "Press 3 to view your inventory" << endl;
@@ -15,10 +15,10 @@ void menu()
 
 int main()
 {
-    int choice = 0; Global bo;
+    int choice = 0; Global bo; inventory ry;
 
     cout << "Press 1 to enter the dungeon." << endl;
-    menu();
+    mmenu();
     cin >> bo.choice;
     cout << endl;
 
@@ -28,7 +28,7 @@ int main()
     {
         if (bo.choice < 0 || bo.choice > 3){
         cout << "Please enter a number that corresponds with a menu option." << endl;
-        menu();
+        mmenu();
         cin >> bo.choice;
         cout << "\n" << endl;
         }
@@ -36,20 +36,22 @@ int main()
         if(bo.choice == 1){
 
         Combat();
-        menu();
+        mmenu();
         cin >> bo.choice;
         cout << endl;
         }
 
         if(bo.choice == 2){
             Map();
-            menu();
+            mmenu();
             cin >> bo.choice;
         }
 
         if(bo.choice == 3){
-            inventory();
-            menu();
+            ry.inventoryfunc();
+            cin >> bo.armour;
+            ry.armourset();
+            mmenu();
             cin >> bo.choice;
             cout << endl;
         }
@@ -64,4 +66,3 @@ int main()
 
     return 0;
 }
-

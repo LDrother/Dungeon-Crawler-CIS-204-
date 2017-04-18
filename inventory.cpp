@@ -6,8 +6,11 @@ using namespace std;
 
 Global oj;
 
-inventory::inventory()
-{
+inventory::inventory(){
+}
+
+inventory::inventoryfunc(){
+
 switch(oj.Rm_Num)
 {
 case 0:
@@ -15,8 +18,6 @@ case 1:
 case 2:
 
   cout << "You have selected to change your armour." << endl;
-  cout << "You are wearing simple sandals, a plain cloak, and carrying a walking stick.\n" << endl;
-
 
   cout << "Enter armour set number to equip:\n" << endl;
 
@@ -67,10 +68,10 @@ case 9:
 
 break;
 }
+}
 
-cin >> oj.armour;
+inventory::armourset(){
 
-{
  switch(oj.armour)
  {
   case 10:
@@ -81,16 +82,15 @@ cin >> oj.armour;
  	cout << "You are now equipped with some comfy leather boots, some worn leather armour, and you've found a rusty knife." << endl;
  	break;
 
-  case 12:
- 	cout << "You are now wearing flip-flops, a swim-suit, and carrying a giant Pool Noodle... not sure why you'd go with that..." << endl;
- 	break;
+
+
 
   case 13:
  	cout << "You are now wearing steel tipped work boots, a nice chain mail shirt, and you are armed with your mother's frying pan." << endl;
  	break;
 
   case 2:
- 	cout << " to start out level two, you have combat boots, Celtic warriors skirt, and a sword with a poisonous blade" << endl;
+ 	cout << "To start out level two, you have combat boots, Celtic warriors skirt, and a sword with a poisonous blade" << endl;
  	break;
 
   case 21:
@@ -116,12 +116,18 @@ cin >> oj.armour;
   case 32:
  	cout << "Dang! You now have gold boots, a fire repellent shirt, and are carrying magic mace... hint: go for the eyes." << endl;
  	break;
+////
+////  default:
+//// 	cout << "You're not going into battle naked and unarmed! PUT SOME CLOTHES ON AND GRAB SOMETHING TO HIT BAD GUYS WITH!" << endl;
+//// 	cin >> oj.armour
+//
+ }
+   if(oj.armour == 12){
 
-  default:
- 	cout << "You're not going into battle naked and unarmed! PUT SOME CLOTHES ON AND GRAB SOMETHING TO HIT BAD GUYS WITH!" << endl;
- 	cin >> oj.armour;
+    cout << "You are now wearing flip-flops, a swim-suit, and carrying a giant Pool Noodle... not sure why you'd go with that..." << endl;
+  }
 
 
  }
-}
-}
+
+
