@@ -7,6 +7,10 @@ class Combat
     public:
         int FirstAttacker, MonsterAttack, PlayerAttack;
         Combat();
+        CombatRun();
+        inventoryfunc();
+
+
 
 };
 

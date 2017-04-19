@@ -8,12 +8,124 @@
 
 using namespace std;
 
-Global ob; inventory in;
+Global ob;
 
 Combat::Combat()
 {
+
+}
+
+Combat::inventoryfunc()
+{
+    if(ob.Rm_Num == 0 || ob.Rm_Num == 1 || ob.Rm_Num == 2)
+{
+  cout << "You have selected to change your armour." << endl;
+
+  cout << "Enter armour set number to equip:\n" << endl;
+
+  cout << "11. Comfy leather boots, some worn leather armour, and you've found a rusty knife." << endl;
+  cout << "12. Flip-flops, a swim-suit, and carrying a giant Pool Noodle... not sure why you'd go with that." << endl;
+  cout << "13. Steel tipped work boots, a nice chain mail shirt, and you are armed with your mother's frying pan." << endl;
+
+}
+
+if(ob.Rm_Num == 3 || ob.Rm_Num == 4 || ob.Rm_Num == 5)
+{
+  cout << "You have selected to change your armour.\n" << endl;
+
+  cout << "Enter armour set number to equip:\n" << endl;
+
+  cout << "11. Comfy leather boots, some worn leather armour, and you've found a rusty knife." << endl;
+  cout << "12. Flip-flops, a swim-suit, and carrying a giant Pool Noodle... not sure why you'd go with that." << endl;
+  cout << "13. Steel tipped work boots, a nice chain mail shirt, and you are armed with your mother's frying pan." << endl;
+  cout << "2.  Combat boots, Celtic warriors skirt, and a sword with a poisonous blade." << endl;
+  cout << "21. Tennis shoes, shorts and a t-shirt, and a packing 50cal handgun." << endl;
+  cout << "22. High heels, a pink sun dress, and are now carrying a handbag with garlic in it." << endl;
+  cout << "23. Bare foot, wearing a loin cloth, and brandishing the American flag and an RPG." << endl;
+}
+
+if(ob.Rm_Num == 6 || ob.Rm_Num == 7 || ob.Rm_Num == 8 || ob.Rm_Num == 9)
+{
+  cout << "You have selected to change your armour.\n" << endl;
+
+  cout << "Enter armour set number to equip:\n" << endl;
+
+  cout << "11. Comfy leather boots, some worn leather armour, and you've found a rusty knife." << endl;
+  cout << "12. Flip-flops, a swim-suit, and carrying a giant Pool Noodle... not sure why you'd go with that." << endl;
+  cout << "13. Steel tipped work boots, a nice chain mail shirt, and you are armed with your mother's frying pan." << endl;
+  cout << "2.  Combat boots, Celtic warriors skirt, and a sword with a poisonous blade." << endl;
+  cout << "21. Tennis shoes, shorts and a t-shirt, and a packing 50cal handgun." << endl;
+  cout << "22. High heels, a pink sun dress, and are now carrying a handbag with garlic in it." << endl;
+  cout << "23. Bare foot, wearing a loin cloth, and brandishing the American flag and an RPG." << endl;
+  cout << "3.  Steel armoured boots, titanium armour, and your dad's hack-saw." << endl;
+  cout << "31. Become a beautiful blond high school girl, carrying a pumpkin spiced latte, and a bad attitude." << endl;
+  cout << "32. Gold boots, fire repellent shirt, and magic mace... hint: go for the eyes." << endl;
+}
+
+cin >> ob.armour;
+
+{
+    switch(ob.armour)
+ {
+  case 10:
+  cout << "You are wearing simple sandals, a plain cloak, and carrying a walking stick.\n" << endl;
+  break;
+
+  case 11:
+ 	cout << "You are now equipped with some comfy leather boots, some worn leather armour, and you've found a rusty knife.\n" << endl;
+ 	break;
+
+  case 12:
+    cout << "You are now wearing flip-flops, a swim-suit, and carrying a giant Pool Noodle... not sure why you'd go with that...\n" << endl;
+    break;
+
+  case 13:
+ 	cout << "You are now wearing steel tipped work boots, a nice chain mail shirt, and you are armed with your mother's frying pan.\n" << endl;
+ 	break;
+
+  case 2:
+ 	cout << "You are now wearing combat boots, Celtic warriors skirt, and a sword with a poisonous blade\n" << endl;
+ 	break;
+
+  case 21:
+ 	cout << "You are now wearing some tennis shoes, shorts and a t-shirt, and a packing 50cal handgun.\n" << endl;
+ 	break;
+
+  case 22:
+ 	cout << "You have decided to put on high heels, a pink sun dress, and are now carrying a handbag with garlic in it.\n" << endl;
+ 	break;
+
+  case 23:
+ 	cout << "You are now bare foot, wearing a loin cloth, and brandishing the American flag and an RPG.\n" << endl;
+ 	break;
+
+  case 3:
+ 	cout << "You are now wearing steel armoured boots, titanium armour, and running around with your dad's hack-saw.\n" << endl;
+ 	break;
+
+  case 31:
+ 	cout << "You are now a beautiful blond high school girl, carrying a pumpkin spiced latte, and a bad attitude.\n" << endl;
+ 	break;
+
+  case 32:
+ 	cout << "Dang! You now have gold boots, a fire repellent shirt, and are carrying magic mace... hint: go for the eyes.\n" << endl;
+ 	break;
+
+  default:
+ 	cout << "You're not going into battle naked and unarmed! PUT SOME CLOTHES ON AND GRAB SOMETHING TO HIT BAD GUYS WITH!\n" << endl;
+ 	inventoryfunc();
+
+ }
+
+}
+}
+
+Combat::CombatRun()
+{
+
 	//Rm_Num incremented here
     ++ob.Rm_Num;
+
 
 	//ROOM ONE INFORMATION
     if(ob.Rm_Num == 1)
@@ -101,10 +213,9 @@ Combat::Combat()
         }
 
         if(ob.choice == 3){
-            inventory();
-//            ob.menu();
-//            cin >> ob.choice;
-//            cout << endl;
+
+            inventoryfunc();
+
         }
 
         if (ob.choice == 0){
@@ -119,6 +230,9 @@ Combat::Combat()
     //ROOM TWO INFORMATION
     if(ob.Rm_Num == 2)
     {
+        //Reset player health
+        ob.Player_HP = 10;
+
     	//coin flip to determine first attacker
     	srand(time(0));
     	FirstAttacker = 1+(rand()%2);
@@ -251,11 +365,8 @@ Combat::Combat()
         }
 
         if(ob.choice == 3){
-            inventory();
-            cin >> ob.armour;
-//            ob.menu();
-//            cin >> ob.choice;
-//            cout << endl;
+            inventoryfunc();
+
         }
 
         if (ob.choice == 0){
@@ -274,7 +385,7 @@ Combat::Combat()
     	//coin flip to determine first attacker
     	srand(time(0));
     	FirstAttacker = 1+(rand()%2);
-cout << ob.armour << endl;
+        cout << ob.armour << endl;
 
     	//combat taking into account the room, monster, player's equipped equipment
     	if(ob.armour == 13)
@@ -409,10 +520,9 @@ cout << ob.armour << endl;
         }
 
         if(ob.choice == 3){
-            inventory();
-//            ob.menu();
-//            cin >> ob.choice;
-//            cout << endl;
+
+            inventoryfunc();
+
         }
 
         if (ob.choice == 0){
@@ -563,10 +673,8 @@ cout << ob.armour << endl;
         }
 
         if(ob.choice == 3){
-            inventory();
-//            ob.menu();
-//            cin >> ob.choice;
-//            cout << endl;
+            inventoryfunc();
+
         }
 
         if (ob.choice == 0){
@@ -768,10 +876,7 @@ cout << ob.armour << endl;
         }
 
         if(ob.choice == 3){
-            inventory();
-//            ob.menu();
-//            cin >> ob.choice;
-//            cout << endl;
+            inventoryfunc();
         }
 
         if (ob.choice == 0){
@@ -922,10 +1027,7 @@ cout << ob.armour << endl;
         }
 
         if(ob.choice == 3){
-            inventory();
-//            ob.menu();
-//            cin >> ob.choice;
-//            cout << endl;
+            inventoryfunc();
         }
 
         if (ob.choice == 0){
@@ -1075,10 +1177,7 @@ cout << ob.armour << endl;
         }
 
         if(ob.choice == 3){
-            inventory();
-//            ob.menu();
-//            cin >> ob.choice;
-//            cout << endl;
+            inventoryfunc();
         }
 
         if (ob.choice == 0){
@@ -1323,10 +1422,8 @@ cout << ob.armour << endl;
         }
 
         if(ob.choice == 3){
-            inventory();
-//            ob.menu();
-//            cin >> ob.choice;
-//            cout << endl;
+            inventoryfunc();
+            cin >> ob.armour;
         }
 
         if (ob.choice == 0){
@@ -1422,3 +1519,5 @@ cout << ob.armour << endl;
     }
 
 }
+
+
